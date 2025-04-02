@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
  
  export function Home() {
@@ -12,9 +13,9 @@
                 <div className="season-container">
                     {seasonCovers.map((name,index) => {
                         return (
-                            <div className="cover-container" key={index}>
+                            <Link to={`/eye-catchers/${index+1}`} className="cover-container" key={index}>
                                 <img key={index} src={`/images/seasons/${name}`}  />
-                            </div>
+                            </Link>
                         )
                     })}
                 </div>
