@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Catchers } from './pages/Catchers';
 
+
 function App() {
   return (
     <div className="App">

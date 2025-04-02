@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
  
  export function Home() {
-    const seasonCovers = ["dxd.webp", "new.webp", "born.jpg", "hero.jpg"]
-
+    const seasonCovers = ["dxd.avif", "new.webp", "born.png",]
+//  "hero.jpg"
     return(
         <div className="container">
             <header>
