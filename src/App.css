@@ -29,7 +29,6 @@ header img {
 main {
   margin: 0 auto;
   flex: 1;
-  width: 1280px;
   max-width: 1280px;
   border-radius: 1em;
   background-color: rgb(44, 44, 44);  
@@ -60,23 +59,33 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1em;
 }
 
 .cover-container {
-  width: 40%;
-  display: flex;
-  align-items: stretch;
-  
-
+  width: 26em;
+  background-color: rgb(224, 219, 219);
+  padding: 0.5em;
+  border-radius: 20px;
 }
 
 .cover-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
-  height: 20em;
+  height: 15em;
 }
 
+.catcher-container {
+  width: 20em;
+}
+
+.catcher-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  height: 15em;
+}
 
 
 

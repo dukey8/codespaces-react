@@ -2,19 +2,22 @@ import { Link } from 'react-router-dom';
 
  
  export function Home() {
-    const seasonCovers = ["dxd.avif", "new.webp", "born.png",]
-//  "hero.jpg"
+    const seasonCovers = ["dxd.webp", "new.webp", "born.webp", "hero.webp"]
+
+
     return(
         <div className="container">
             <header>
-                <img src="/images/banner.png"/>
+                <Link to={'/'}>
+                    <img src="/images/banner.png"/>
+                </Link>
             </header>
             <main>
                 <div className="season-container">
                     {seasonCovers.map((name,index) => {
                         return (
                             <Link to={`/eye-catchers/${index+1}`} className="cover-container" key={index}>
-                                <img key={index} src={`/images/seasons/${name}`}  />
+                                <img key={index} src={`/images/seasons/${name}`} loading='lazy'  />
                             </Link>
                         )
                     })}
